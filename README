@@ -1,0 +1,14 @@
+OJS plugin, tested for OJS 2.6.3
+
+Create a new block to display the last announcements in a sidebar.
+
+Install
+=======
+Install as usual OJS plugin
+
+Use
+===
+In aparence configuration (step 5) set the new block to some sidebar.
+
+If you want apply your custom CSS
+
