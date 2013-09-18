@@ -8,17 +8,18 @@
  *
  * $Id$
  *}
+
 <div class="block" id="sidebarNews">
-	<h2 class="blockTitle" id="news">{translate key="plugins.block.news.link"}</h2>
+	<span class="blockTitle" id="news">{translate key="plugins.block.news.link"}</span>
   <ul>
     {foreach from=$news item=new}
-      <li class="newElement"><a href="{url page="new" op="view" path=$new->getId()}" cass="newTitle">
-        <h3>{$new->getLocalizedTitleFull()|strip|escape:"html"}</h3>
+      <li class="newElement"><a href="{url page="announcement" op="view" path=$new->getId()}" cass="newTitle">
+        {$new->getLocalizedTitleFull()|strip|escape:"html"}
         {if $new->getLocalizedDescription()}
           <!--div class="newDescription">{$new->getLocalizedDescription()|strip|escape:"html"}</div-->
         {/if}
       </a></li>
     {/foreach}
   </ul>
-
 </div>	
+
