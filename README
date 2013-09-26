@@ -4,7 +4,8 @@ Create a new block to display the last announcements in a sidebar.
 
 Install
 =======
-Install as usual OJS plugin
+Install as usual OJS plugin.
+
 
 Use
 ===
@@ -12,3 +13,10 @@ In aparence configuration (step 5) set the new block to some sidebar.
 
 If you want apply your custom CSS
 
+
+Known issues
+============
+
+Q: The block is enabled in step 5, but it's not shown in the homepage.
+A: Sometimes OJS requires "$ php tools upgrade.php update" to register the module in the database.
+   More info: http://pkp.sfu.ca/support/forum/viewtopic.php?f=8&t=8794#p34831
